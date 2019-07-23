@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html id="particles-js">
+<head>
+	<title>Calculatrice</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+</head>
+<body>
+	
+	<div class="main">
+
+		<div class="container" onclick="myFunction()" id="joseph">
+			<h1 class="text" id="Ghost"  >GHOST</h1>
+		</div>
+		<form name="form" id="form">
+			<input type="" class="textview" name="textview">
+		</form>
+		
+		<table>
+
+			<!--tableau na ....-->
+			<tr>
+				<td><input id="button" class="btn btn-outline-primary" type="button" value="AC" onclick="clean()" name=""></td>
+				<td><input id="button" class="btn btn-outline-primary" type="button" value="DEL" onclick="del()" name=""></td>
+				<td><input id="button" class="btn btn-outline-primary" type="button" value="/" onclick="insert('/')" name=""></td>
+				<td><input id="button" class="btn btn-outline-primary" type="button" value="X" onclick="insert('*')" name=""></td>
+			</tr>
+			<tr>
+				<td><input id="button" class="btn btn-outline-primary" type="button" value="7" onclick="insert(7)" name=""></td>
+				<td><input id="button" class="btn btn-outline-primary" type="button" value="8" onclick="insert(8)" name=""></td>
+				<td><input id="button" class="btn btn-outline-primary" type="button" value="9" onclick="insert(9)" name=""></td>
+				<td><input id="button" class="btn btn-outline-primary" type="button" value="-" onclick="insert('-')" name=""></td>
+			</tr>
+			<tr>
+				<td><input id="button" class="btn btn-outline-primary" type="button" value="4" onclick="insert(4)" name=""></td>
+				<td><input id="button" class="btn btn-outline-primary" type="button" value="5" onclick="insert(5)" name=""></td>
+				<td><input id="button" class="btn btn-outline-primary" type="button" value="6" onclick="insert(6)" name=""></td>
+				<td><input id="button" class="btn btn-outline-primary" type="button" value="+" onclick="insert('+')" name=""></td>
+			</tr>
+			<tr>
+				<td><input id="button" class="btn btn-outline-primary"  type="button" value="1" onclick="insert(1)" name=""></td>
+				<td><input id="button" class="btn btn-outline-primary" type="button" value="2" onclick="insert(2)" name=""></td>
+				<td><input id="button" class="btn btn-outline-primary" type="button" value="3" onclick="insert(3)" name=""></td>
+				<td><input id="button" class="btn btn-outline-primary" type="button" value="=" onclick="equal()" name=""></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input style="width:168px" id="button" class="btn btn-outline-primary"  type="button" value="0" onclick="insert(0)" name=""></td>
+				<td><input id="button" class="btn btn-outline-primary" type="button" value="." onclick="insert('.')" name=""></td>
+				<td><input id="button" class="btn btn-outline-primary" type="button" value="Pi" onclick="insert(3.14159)" name=""></td>
+			</tr>
+		</table>
+	</div>
+
+	<!--import javascript file-->
+	<script type="text/javascript" src="particles.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
